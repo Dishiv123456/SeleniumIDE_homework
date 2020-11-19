@@ -1,0 +1,128 @@
+{
+  "id": "369cf112-f5d3-40c9-af96-9d4b64b3fb2b",
+  "version": "2.0",
+  "name": "X-cart",
+  "url": "https://www.x-cart.com",
+  "tests": [{
+    "id": "98fe60f5-52ba-4afa-9063-9bba43dfd5c9",
+    "name": "X-cartTest",
+    "commands": [{
+      "id": "56215cbf-7fd1-4f54-bd2a-6ec5f87b830f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "613d1faa-fbc0-4b67-80c0-e76cf3d49727",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x699",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "02de56c2-591b-46c9-aa97-6078cbe0e33d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Get Started",
+      "targets": [
+        ["linkText=Get Started", "linkText"],
+        ["css=.gb-header__btns > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Get Started')]", "xpath:link"],
+        ["xpath=//main[@id='main']/article/header/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.x-cart.com/software-pricing.html')]", "xpath:href"],
+        ["xpath=//header/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Get Started')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe6c41dc-4227-4b7c-b7d6-3fe9dc6b9f2b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Get Started",
+      "targets": [
+        ["linkText=Get Started", "linkText"],
+        ["css=.gb-header__btns > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Get Started')]", "xpath:link"],
+        ["xpath=//main[@id='main']/article/header/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.x-cart.com/software-pricing.html')]", "xpath:href"],
+        ["xpath=//header/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Get Started')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2dfda8da-dd18-4718-9729-0d9c93559f6b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Get Started",
+      "targets": [
+        ["linkText=Get Started", "linkText"],
+        ["css=.gb-header__btns > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Get Started')]", "xpath:link"],
+        ["xpath=//main[@id='main']/article/header/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.x-cart.com/software-pricing.html')]", "xpath:href"],
+        ["xpath=//header/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Get Started')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe037422-1b1b-4354-b502-12d4b94388d5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gb-header__img",
+      "targets": [
+        ["css=.gb-header__img", "css:finder"],
+        ["xpath=//img[@alt='Create Your Store!']", "xpath:img"],
+        ["xpath=//main[@id='main']/article/header/div/div[2]/span/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1a34c42-64af-43a2-91a2-ba7acacf75ff",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gb-header__img",
+      "targets": [
+        ["css=.gb-header__img", "css:finder"],
+        ["xpath=//img[@alt='Create Your Store!']", "xpath:img"],
+        ["xpath=//main[@id='main']/article/header/div/div[2]/span/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c470a7c5-cc52-4fab-92d4-6ed7a6c51630",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gb-header__img",
+      "targets": [
+        ["css=.gb-header__img", "css:finder"],
+        ["xpath=//img[@alt='Create Your Store!']", "xpath:img"],
+        ["xpath=//main[@id='main']/article/header/div/div[2]/span/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe5cc29e-1331-4b65-84b9-68cfa3ac2d10",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gb-header__img",
+      "targets": [
+        ["css=.gb-header__img", "css:finder"],
+        ["xpath=//img[@alt='Create Your Store!']", "xpath:img"],
+        ["xpath=//main[@id='main']/article/header/div/div[2]/span/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6eb3b0a4-ffc2-4f71-95a4-299492092c70",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["98fe60f5-52ba-4afa-9063-9bba43dfd5c9"]
+  }],
+  "urls": ["https://www.x-cart.com/"],
+  "plugins": []
+}

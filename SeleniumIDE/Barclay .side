@@ -1,0 +1,102 @@
+{
+  "id": "dc582c91-d004-48c9-a347-b456fff681c4",
+  "version": "2.0",
+  "name": "Barclay ",
+  "url": "https://www.barclays.co.uk",
+  "tests": [{
+    "id": "8dc41cd0-e185-4023-927d-f7163599e157",
+    "name": "BarclayTest ",
+    "commands": [{
+      "id": "f541b4d6-ac5d-4114-a184-ff3d0149442c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e0065da-7458-44c0-b9fd-8925b5e9cf04",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x697",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac3105ce-cfc0-4257-9672-515e435568b5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Menu",
+      "targets": [
+        ["linkText=Menu", "linkText"],
+        ["css=.hamburger > a", "css:finder"],
+        ["xpath=//a[contains(@href, '#menu')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "898e8aea-553b-4620-9041-754480968560",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Bank",
+      "targets": [
+        ["linkText=Bank", "linkText"],
+        ["css=.main-nav > ul > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Bank')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[6]", "xpath:href"],
+        ["xpath=//div[3]/div/nav/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bank')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "55c6094c-9cfc-4dc1-8f04-f1b7035016d8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Bank accounts",
+      "targets": [
+        ["linkText=Bank accounts", "linkText"],
+        ["css=.active .nav-col-four > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Bank accounts')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[7]", "xpath:href"],
+        ["xpath=//li/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bank accounts')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "82d0ab83-90e7-4497-af6b-7391731339ac",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Barclays Bank Account",
+      "targets": [
+        ["linkText=Barclays Bank Account", "linkText"],
+        ["css=.active li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Barclays Bank Account')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/current-accounts/bank-account/')]", "xpath:href"],
+        ["xpath=//li/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Barclays Bank Account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4eb4d8e1-ab03-4e94-8c9e-8a8301d41f9b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.barclays-gdpr__preferences-button",
+      "targets": [
+        ["css=.barclays-gdpr__preferences-button", "css:finder"],
+        ["xpath=//div[@id='__tealiumGDPRecModal']/div/div/div/div/div[2]/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Preferences')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "362b5ec0-59f6-4518-ac22-aeda1eaa6782",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8dc41cd0-e185-4023-927d-f7163599e157"]
+  }],
+  "urls": ["https://www.barclays.co.uk/"],
+  "plugins": []
+}

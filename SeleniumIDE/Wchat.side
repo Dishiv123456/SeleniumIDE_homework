@@ -1,0 +1,105 @@
+{
+  "id": "1e623ea6-4e7c-4c72-8566-b0eec2d58417",
+  "version": "2.0",
+  "name": "Wchat",
+  "url": "https://www.wcht.org.uk",
+  "tests": [{
+    "id": "122ead76-2854-4e28-bfd1-ecfc35586e71",
+    "name": "Wchat",
+    "commands": [{
+      "id": "573314e4-712a-48fc-8920-271a0291a05c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "89de0635-f297-46e0-899a-5e69e266a93d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x698",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2da911e-8f62-4048-90ba-67684d871db8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mob-menu-btn",
+      "targets": [
+        ["css=.mob-menu-btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[7]", "xpath:attributes"],
+        ["xpath=//header/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "98ac835e-b437-46a4-8dff-0ec01b473616",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=.header__nav-home-btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "90b4e631-bfc8-46c0-97a0-b85e6cd2a5ed",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Your home",
+      "targets": [
+        ["linkText=Your home", "linkText"],
+        ["css=.header__nav-link-object:nth-child(1) > .header__mob-sub-btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Your home')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/your-home')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Your home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ce8dcf3-e885-4f99-9f8e-7dc6ff9cc1d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.grid-column:nth-child(1) .card__title",
+      "targets": [
+        ["css=.grid-column:nth-child(1) .card__title", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Your tenancy')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "74a16cc4-ee93-4262-b921-55dea7f5fe2a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inner-banner__btn > .icon-svg",
+      "targets": [
+        ["css=.inner-banner__btn > .icon-svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "36e5ad97-bf33-4ea1-97d6-87786e472423",
+      "comment": "",
+      "command": "click",
+      "target": "css=.grid-column:nth-child(2) .card__icon-holder",
+      "targets": [
+        ["css=.grid-column:nth-child(2) .card__icon-holder", "css:finder"],
+        ["xpath=//div[2]/div/a/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d75ab88c-4767-4f2b-8b2c-aec5be28f2d4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["122ead76-2854-4e28-bfd1-ecfc35586e71"]
+  }],
+  "urls": ["https://www.wcht.org.uk/"],
+  "plugins": []
+}

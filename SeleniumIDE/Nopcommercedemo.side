@@ -1,0 +1,115 @@
+{
+  "id": "40718b69-4868-448a-bc39-0fee455f5a99",
+  "version": "2.0",
+  "name": "Nopcommercedemo",
+  "url": "https://demo.nopcommerce.com",
+  "tests": [{
+    "id": "7648683c-8ebc-4473-93e1-c6020a4c1b0a",
+    "name": "Test1nopCommerce",
+    "commands": [{
+      "id": "96c4c711-27c6-40a3-ba0a-322eeaae6411",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a1e051a-b741-44fc-ad7d-6a3be31a06eb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1adae22d-301e-4b65-abde-b20dc7fada0f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ico-account",
+      "targets": [
+        ["css=.ico-account", "css:finder"],
+        ["xpath=//a[contains(text(),'My account')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/customer/info')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "858745fb-3257-4056-8451-14ad30793b6f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ico-account",
+      "targets": [
+        ["css=.ico-account", "css:finder"],
+        ["xpath=//a[contains(text(),'My account')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/customer/info')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf45eb42-d4e9-4082-83e7-2ff02ca02846",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-toggle",
+      "targets": [
+        ["css=.menu-toggle", "css:finder"],
+        ["xpath=//div[6]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c512a10f-b445-4993-abc9-8e05ee5308b2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Computers",
+      "targets": [
+        ["linkText=Computers", "linkText"],
+        ["css=.mobile > li:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Computers')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/computers')])[2]", "xpath:href"],
+        ["xpath=//ul[2]/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bca3754-2eb2-4a1d-bb40-b2bab6f30f6c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-toggle",
+      "targets": [
+        ["css=.menu-toggle", "css:finder"],
+        ["xpath=//div[6]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a900a05a-c1f5-4998-8cb2-a0e86e524827",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Electronics",
+      "targets": [
+        ["linkText=Electronics", "linkText"],
+        ["css=.mobile > li:nth-child(2) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Electronics')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/electronics')])[2]", "xpath:href"],
+        ["xpath=//ul[2]/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9af18e34-4cde-4a04-ba9a-28cba8ce8d20",
+      "comment": "",
+      "command": "click",
+      "target": "css=.block-manufacturer-navigation > .title",
+      "targets": [
+        ["css=.block-manufacturer-navigation > .title", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1fbeac8c-9dbf-4bba-a0f3-abd5708e83a9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7648683c-8ebc-4473-93e1-c6020a4c1b0a"]
+  }],
+  "urls": ["https://demo.nopcommerce.com/"],
+  "plugins": []
+}

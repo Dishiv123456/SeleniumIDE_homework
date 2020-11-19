@@ -1,0 +1,141 @@
+{
+  "id": "b73b73f3-3e66-4f33-a121-e82137aca7bb",
+  "version": "2.0",
+  "name": "Harrow.gov",
+  "url": "https://www.harrow.gov.uk",
+  "tests": [{
+    "id": "580d5d9d-27d1-4fb9-a9f9-413125e8282e",
+    "name": "Harrow.gov",
+    "commands": [{
+      "id": "ee1cbd66-11d4-4b0b-b627-1a7d68025dc1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec840dfd-c67b-4817-a33e-c280132e8f10",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x698",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "adc8fb9f-1a80-41c0-b83e-f944fc6cb8b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-account",
+      "targets": [
+        ["css=.icon-account", "css:finder"],
+        ["xpath=//header[@id='top']/div/nav/div/ul/li/a/span", "xpath:idRelative"],
+        ["xpath=//li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2277fe25-5944-4c4f-8834-756390db559f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Recycling centre bookings",
+      "targets": [
+        ["linkText=Recycling centre bookings", "linkText"],
+        ["css=.my-activity__item:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='content']/div[2]/div/div/div/div/div/div/nav/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.harrow.gov.uk/bins-waste-recycling/recycling-centres')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Recycling centre bookings')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b529a61-e676-4a70-9161-64cd303900d6",
+      "comment": "",
+      "command": "click",
+      "target": "id=a11y-toggle-0",
+      "targets": [
+        ["id=a11y-toggle-0", "id"],
+        ["css=#a11y-toggle-0", "css:finder"],
+        ["xpath=//button[@id='a11y-toggle-0']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[2]/div/nav/button", "xpath:idRelative"],
+        ["xpath=//nav/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52364f64-faa1-476f-bb9b-d9990a253ee6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-active > .list__link",
+      "targets": [
+        ["css=.is-active > .list__link", "css:finder"],
+        ["xpath=//ol[@id='pages-in-list']/li/span", "xpath:idRelative"],
+        ["xpath=//nav/ol/li/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38bda31f-67a9-4741-b236-d4da5a03046b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav__toggle-icon",
+      "targets": [
+        ["css=.nav__toggle-icon", "css:finder"],
+        ["xpath=//button[@id='a11y-toggle-0']/span[3]", "xpath:idRelative"],
+        ["xpath=//button/span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c36ab68-cfa1-4e8d-bdc3-a8b672a0ae0b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list--breadcrumb",
+      "targets": [
+        ["css=.list--breadcrumb", "css:finder"],
+        ["xpath=//ol", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48e8d9ed-aeeb-4c5d-91ea-13097c490bf6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#js-menu-toggle > .button__icon",
+      "targets": [
+        ["css=#js-menu-toggle > .button__icon", "css:finder"],
+        ["xpath=//a[@id='js-menu-toggle']/span[2]", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f51eebb6-725f-4f84-9d8f-0a6ed5b76c49",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Benefits",
+      "targets": [
+        ["linkText=Benefits", "linkText"],
+        ["css=.list__item--active:nth-child(2) > .list__link", "css:finder"],
+        ["xpath=//a[contains(text(),'Benefits')]", "xpath:link"],
+        ["xpath=//section[@id='js-menu']/div/nav/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/benefits')]", "xpath:href"],
+        ["xpath=//div/nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Benefits')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "340eb5ea-0ce1-45d7-9f5d-e2f8df9d8f33",
+      "comment": "",
+      "command": "click",
+      "target": "css=.harrow-close-icon__line:nth-child(2)",
+      "targets": [
+        ["css=.harrow-close-icon__line:nth-child(2)", "css:finder"],
+        ["xpath=//span[2]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c56f994b-bbea-4440-9ed6-9b4f0942ace9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["580d5d9d-27d1-4fb9-a9f9-413125e8282e"]
+  }],
+  "urls": ["https://www.harrow.gov.uk/"],
+  "plugins": []
+}
